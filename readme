@@ -1,0 +1,36 @@
+# Villio — Мини-приложение для аренды вилл
+
+## Быстрый старт
+
+1. Зайди в папку backend и установи зависимости:
+    ```
+    cd backend
+    npm install
+    ```
+2. Запусти сервер:
+    ```
+    npm start
+    ```
+
+3. (Опционально) Запусти Telegram-бот:
+    ```
+    cd bot
+    npm install node-telegram-bot-api
+    node telegram-bot.js
+    ```
+
+API сервера по умолчанию слушает порт 3000.  
+Проверь http://localhost:3000/api/listings
+
+## Деплой на Railway
+- Создай новый проект
+- Подключи свой репозиторий
+- В ENV параметрах укажи переменные (например, BOT_TOKEN)
+- Нажми "Deploy" — Railway всё установит сам по package.json!
+
+## Как добавить объект?
+Расширяй массив listings в backend/models.js — и ты увидишь их по API.
+
+---
+
+Вопросы — пиши сюда!
