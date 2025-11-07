@@ -6,5 +6,8 @@ const bot = new TelegramBot(token, { polling: true });
 bot.onText(/\/start/, (msg) => {
   bot.sendMessage(msg.chat.id, 'Добро пожаловать! Выберите параметры поиска виллы:');
 });
+bot.onText(/\/start/, (msg) => {
+    bot.sendMessage(msg.chat.id, 'Добро пожаловать! Выберите параметры поиска виллы:');
+});
 
 // Добавь свою логику обращения к /api/listings и бронирования!
